@@ -1,4 +1,4 @@
-let hour=0;
+let hr=0;
 var minute=0;
 let second=0;
 
@@ -19,7 +19,7 @@ function stop(){
 
 function reset(){
     isRunning=false;
-    hour = 0;
+    hr = 0;
     minute = 0;
     second = 0;
     clearInterval(timer);
@@ -35,10 +35,10 @@ function stopwatch(){
     }
     if(minute==60){
         minute=0;
-        hour++;
+        hr++;
     }
     }    
-    document.getElementById("hour").innerHTML= update(hour);
+    document.getElementById("hour").innerHTML= update(hr);
     document.getElementById("minute").innerHTML=update(minute);
     document.getElementById("second").innerHTML=update(second);
 }
